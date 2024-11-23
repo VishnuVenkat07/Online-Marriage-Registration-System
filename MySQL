@@ -1,0 +1,13 @@
+CREATE DATABASE mr_esec;
+
+USE mr_esec;
+
+CREATE TABLE marriage_records (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    husband_name VARCHAR(100) NOT NULL,
+    wife_name VARCHAR(100) NOT NULL,
+    address TEXT NOT NULL,
+    marriage_date DATE NOT NULL,
+    husband_aadhaar VARCHAR(12) NOT NULL UNIQUE,
+    wife_aadhaar VARCHAR(12) NOT NULL UNIQUE
+);
